@@ -10,6 +10,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 /***
  * Exam project for interface desidn class
+ * This class contains all the needed for launch the main window
  * @author javier Lozano Almeda
  * @version 1.0
  * @see ControlFX.java
@@ -40,8 +41,11 @@ public class MainFX extends Application {
 	/***
 	 * Configure the values of the scene and launch it
 	 *  
-	 *  @param loader put the location of the fxml 
-	 *  @exception exceptions In case of error, show the error mesage 
+	 *  @param loader put the location of the fxml
+	 *  @param profileLayout contain FXML Loader
+	 *  @param scene contain the stage 
+	 *  @exception Trow a exceptions In case of error
+	 *  @throws Show the error message that the exception throws
 	 */
 	public void initProfile() {
 		try {
@@ -53,7 +57,7 @@ public class MainFX extends Application {
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(profileLayout);
 			/***
-			 * Load us own stylesheet in the scene
+			 * Load us own style sheet in the scene
 			 */
 			scene.getStylesheets().add(getClass().getResource("../vista/mystylesheet.css").toExternalForm());
 
@@ -72,7 +76,10 @@ public class MainFX extends Application {
 	
 		
 	}
-
+	
+	/***
+	 * Launch the app
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
