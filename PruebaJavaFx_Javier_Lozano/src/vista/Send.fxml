@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
@@ -113,13 +114,16 @@
                               </TextArea>
                            </children>
                         </GridPane>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" onMouseClicked="#closeStage" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="8.0">
+                        <ImageView fitHeight="60.0" fitWidth="60.0" onMouseClicked="#closeStage" pickOnBounds="true" preserveRatio="true" styleClass="exitButton" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="8.0">
                            <image>
                               <Image url="@images/exit.png" />
                            </image>
                            <cursor>
-                              <Cursor fx:constant="HAND" />
+                              <Cursor fx:constant="DEFAULT" />
                            </cursor>
+                           <effect>
+                              <ColorAdjust hue="0.05" />
+                           </effect>
                         </ImageView>
                      </children>
                   </AnchorPane>

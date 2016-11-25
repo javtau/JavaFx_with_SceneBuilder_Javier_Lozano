@@ -44,7 +44,7 @@ public class MainFX extends Application {
 	 *  @param loader put the location of the fxml
 	 *  @param profileLayout contain FXML Loader
 	 *  @param scene contain the stage 
-	 *  @exception Trow a exceptions In case of error
+	 *  @exception Throws a exceptions In case of error
 	 *  @throws Show the error message that the exception throws
 	 */
 	public void initProfile() {
@@ -62,7 +62,6 @@ public class MainFX extends Application {
 			scene.getStylesheets().add(getClass().getResource("../vista/mystylesheet.css").toExternalForm());
 
 			//adding fonts
-			scene.getStylesheets().add("http://fonts.googleapis.com/css?family=Shadows+Into+Light");
 			/***
 			 * Load the font that we wont in the scene
 			 */

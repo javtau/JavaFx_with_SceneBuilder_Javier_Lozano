@@ -1,10 +1,15 @@
+/** 
+ * Author: Javier Lozano
+*/
+
+
 .background {
     -fx-background-color: #4188F8;
 }
 
-/* 
- * Author: Javier Lozano
-*/
+/**
+ * Class for the github button 
+ */
  .gitButton {
     
     -fx-border-color: #ffffff;
@@ -12,12 +17,59 @@
     -fx-text-fill: #ffffff;
 }
 
-
+/**
+ * Class for change the font, only used in the title in the profile window
+ */
 .myprofile {
 	-fx-font-family: HipsterishFontNormal;
 }
 
+/**
+ * Class for establish the image for the normal state of the send button
+ */
+.sendButton {
+	-fx-image:url("images/send.png");
+	-fx-cursor: hand ;
+}
 
+/**
+ * Class for establish the image for the hover state of the send button
+ */
+.sendButton:hover {
+	-fx-image:url("images/sendhover.png");
+	
+}
+
+/**
+ * Class for establish the image for the pressed state of the send button
+ */
+.sendButton:pressed, .sendButton:default:hover:pressed {
+	-fx-image:url("images/sendPressed.png");
+	
+}
+
+/**
+ * Class for establish the image for the normal state of the exit button
+ */
+.exitButton {
+	-fx-image:url("images/exit.png");
+}
+
+/**
+ * Class for establish the image for the hover state of the exit button
+ */
+.exitButton:hover {
+	-fx-image:url("images/exithover.png");
+	-fx-cursor: hand ;
+}
+
+/**
+ * Class for establish the image for the pressed state of the exit button
+ */
+.exitButton:pressed, .exitButton:default:hover:pressed {
+	-fx-image:url("images/exitPressed.png");
+	
+}
 
 
 

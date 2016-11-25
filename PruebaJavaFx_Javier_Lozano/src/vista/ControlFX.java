@@ -32,6 +32,7 @@ public class ControlFX {
 			Stage sendStage = new Stage();
 			sendStage.setTitle("Submission form");
 			Scene scene = new Scene(page);
+			scene.getStylesheets().add(getClass().getResource("../vista/mystylesheet.css").toExternalForm());
 			sendStage.setScene(scene);
 
 			sendStage.show();
